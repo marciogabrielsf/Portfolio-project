@@ -68,6 +68,7 @@ body,
 button,
 input,
 textarea {
+  color: var(--mid-gray);
   font-family: var(--body-font);
   font-size: var(--body-font-size);
 }
@@ -79,8 +80,9 @@ h3 {
 }
 
 a {
+  color: var(--mid-gray);
   text-decoration: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 button {
@@ -99,4 +101,10 @@ button {
 .container {
   max-width: 80rem;
   margin: 0 auto 0 auto;
+}
+
+.Main{
+  background-color: var(--main-color);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000E2E 1px);
+  background-size: 80px 80px;
 }

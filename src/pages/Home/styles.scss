@@ -1,11 +1,6 @@
 .HomeSection {
-    color: var(--var-title-color-inv);
     padding-top: calc(var(--header-height));
     height: calc(100vh - var(--header-height));
-    background-color: var(--main-color);
-    background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000E2E 1px);
-    background-size: 80px 80px;
-    
 }
 
 .homeContainer{

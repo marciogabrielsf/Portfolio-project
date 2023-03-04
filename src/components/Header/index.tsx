@@ -8,17 +8,19 @@ export default function Header() {
         <header className='header'>
             <nav className='nav container'>
                 <div className='leftMail'>
-                    <button className='mailButton'>
-                        <i className="fa-regular fa-envelope"></i>
-                    </button>
+                    <a className='redirect' href={`mailto:${ActualEmail}`}>
+                        <button className='mailButton'>
+                            <i className="fa-regular fa-envelope"></i>
+                        </button>
+                    </a>
                     <p className='mail'>{ActualEmail}</p>
                 </div>
 
                 <ul className="nav_list">
-                    {NavBarLinks.map(({ item, id }) => {
+                    {NavBarLinks.map(({ item, id, href }) => {
                         return (
                             <li className='navItens'>
-                                <p>{item}</p>
+                                {href !== '' ? <a href={href}>{item}</a> : <p>{item}</p>}
                             </li>
                         )
                     })}

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 
 // pages //
 import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
       <main className='Main'>
         <Home />
+        <About />
       </main>
 
     </div>

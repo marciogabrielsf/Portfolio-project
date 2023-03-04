@@ -3,7 +3,7 @@ import { NavBarTypes } from "@/components/Header/models";
 export const NavBarLinks: NavBarTypes[] = [
     {
         id: 0,
-        href: '',
+        href: 'https://github.com/marciogabrielsf',
         item: 'GitHub'
     },
     {
@@ -24,7 +24,7 @@ export const NavBarLinks: NavBarTypes[] = [
     },
     {
         id: 4,
-        href: '',
+        href: 'https://www.linkedin.com/in/marciogabrielsf/',
         item: 'LinkedIn'
     }
     
