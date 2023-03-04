@@ -1,0 +1,29 @@
+.mastHead {
+  max-width: 50rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding-bottom: var(--header-height);
+
+  .profileImage{
+    border-radius: 50%;
+  }
+
+  .mainTitle {
+    font-size: var(--xl-font-size);
+    font-weight: var(--font-bold);
+    background-image: -webkit-linear-gradient(315deg, #969696 0%,#0031a3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  .topName {
+    color: var(--mid-gray);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-thin);
+  }
+}

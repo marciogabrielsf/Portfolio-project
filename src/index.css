@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  /* Colors */
+
+  --main-color: #000E2E;
+  --secondary-color: #06750e;
+  --complementary-color-1: #00216E;
+  --complementary-color-2: #0038BA;
+  --hovered-color: #002988;
+  --mid-gray: #a5a5a5;
+  --var-title-color: #000;
+  --var-title-color-inv: #fff;
+
+  /* Fonts */
+
+  --body-font: "Nunito";
+  --xxl-font-size: 3.5rem;
+  --xl-font-size: 3rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.825rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.6rem;
+  --font-extra-thin: 200;
+  --font-thin: 300;
+  --font-normal: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+  --default-icon-size: 2rem;
+
+  /* Margins */
+
+  --header-height: 7rem;
+
+  /* Z-Index */
+  --z-top: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+i {
+  font-size: var(--default-icon-size);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-medium);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* layout defaults */
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto 0 auto;
+}
