@@ -1,9 +1,18 @@
-import React from 'react'
+import { useState } from 'react'
 import './styles.scss'
 
 import { NavBarLinks, ActualEmail } from './static'
 
 export default function Header() {
+
+    const [toggleMenuState, setToggleMenuState] = useState(false);
+
+
+    function handleToggleMenu() {
+        setToggleMenuState(!toggleMenuState)
+    }
+
+
     return (
         <header className='header'>
             <nav className='nav container'>
@@ -16,17 +25,25 @@ export default function Header() {
                     <p className='mail'>{ActualEmail}</p>
                 </div>
 
-                <ul className="nav_list">
-                    {NavBarLinks.map(({ item, id, href }) => {
-                        return (
-                            <li className='navItens'>
-                                {href !== '' ? <a href={href}>{item}</a> : <p>{item}</p>}
-                            </li>
-                        )
-                    })}
+                <div className={`nav_list_div ${toggleMenuState ? 'isShown' : ''}`}>
+                    <div className="close_button">
+                        <i onClick={handleToggleMenu} className="fa-solid fa-xmark"></i>
+                    </div>
+                    <ul className="nav_list">
+                        {NavBarLinks.map(({ item, href }) => {
+                            return (
+                                <li className='navItens'>
+                                    {href !== '' ? <a onClick={handleToggleMenu} href={href}>{item}</a> : <p>{item}</p>}
+                                </li>
+                            )
+                        })}
+                        <button className='hireMeButton'>Me Contrate Hoje!</button>
+                    </ul>
+                </div>
 
-                    <button className='hireMeButton'>Me Contrate Hoje!</button>
-                </ul>
+                <div className="nav_toggle" onClick={handleToggleMenu}>
+                    <i className="fa-solid fa-bars"></i>
+                </div>
 
             </nav>
         </header>

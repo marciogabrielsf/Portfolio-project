@@ -1,0 +1,32 @@
+:root {
+  --project-phone-width: 32rem;
+  --project-phone-margin-right: 8rem;
+  --description-margin-top: 2rem;
+}
+
+.copy_headline {
+  font-size: var(--xxl-font-size);
+}
+.copy_description {
+  font-size: var(--h2-font-size);
+  margin-top: var(--description-margin-top);
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--description-margin-top);
+  i {
+    font-size: var(--h1-font-size);
+  }
+}
+
+.project_one_container {
+  display: flex;
+  align-items: center;
+}
+
+.project_phone {
+  width: var(--project-phone-width);
+  margin-right: var(--project-phone-margin-right);
+}

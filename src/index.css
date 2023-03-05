@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
 :root {
   /* Colors */
 
   --main-color: #000E2E;
   --secondary-color: #06750e;
   --complementary-color-1: #00216E;
+  --complementary-color-1-rgb: 0, 33, 110;
   --complementary-color-2: #0038BA;
   --hovered-color: #002988;
   --mid-gray: #a5a5a5;
   --var-title-color: #000;
   --var-title-color-inv: #fff;
+  --default-backdrop-filter: 4rem;
 
   /* Fonts */
 
@@ -30,11 +31,13 @@
   --font-normal: 400;
   --font-medium: 600;
   --font-bold: 700;
+  --font-bolder: 800;
   --default-icon-size: 2rem;
 
   /* Margins */
 
-  --default-border-radius: 0.5rem;
+  --default-border-radius: 1rem;
+  --x-default-padding: 1rem;
   --header-height: 7rem;
 
   /* Z-Index */
@@ -94,9 +97,24 @@ button {
 
 /* layout defaults */
 
+.section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.shinyContainer{
+  padding: 3rem;
+  border-radius: var(--default-border-radius);
+  background-color: rgba(var(--complementary-color-1-rgb), 0.4);
+  border: solid 0.15rem;
+  border-color: var(--complementary-color-2);
 }
 
 .container {
@@ -108,4 +126,16 @@ button {
   background-color: var(--main-color);
   background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000E2E 1px);
   background-size: 80px 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container{
+    margin: 0 var(--x-default-padding) 0 var(--x-default-padding);
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+
 }

@@ -1,0 +1,15 @@
+.project_header{
+    display:flex;
+    flex-direction: column;
+    
+    margin-bottom: 15rem;
+}
+
+.headline{
+    font-size: 5rem;
+    font-weight: var(--font-bold);
+    background: #1345BA;
+background: linear-gradient(to right, #1345BA 0%, #4F73C6 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

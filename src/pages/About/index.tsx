@@ -7,7 +7,7 @@ import AboutText from './AboutText'
 
 export default function About() {
   return (
-    <section className="aboutSection">
+    <section id='About' className="aboutSection section">
       <div className='aboutContainer container'>
         <AboutText />
       </div>

@@ -1,6 +1,6 @@
 .HomeSection {
     padding-top: calc(var(--header-height));
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height)) !important;
 }
 
 .homeContainer{
@@ -8,5 +8,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    gap: 5rem;
+    padding-bottom: var(--header-height);
 }

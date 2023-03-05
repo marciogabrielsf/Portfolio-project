@@ -5,26 +5,40 @@
   flex-direction: column;
   gap: 1rem;
   text-align: center;
-  padding-bottom: var(--header-height);
 
   .profileImage{
     border-radius: 50%;
   }
 
-  .mainTitle {
-    line-height: 3.6rem;
-    font-size: var(--xl-font-size);
-    font-weight: var(--font-bold);
-    background-image: -webkit-linear-gradient(315deg, #969696 0%,#0031a3 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-  
-  }
-  .topName {
+}
 
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-normal);
+.topName {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-normal);
+}
+
+.mainTitle {
+  line-height: 3.6rem;
+  font-size: var(--xl-font-size);
+  font-weight: var(--font-bold);
+  background-image: -webkit-linear-gradient(315deg, #969696 0%,#0031a3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+
+@media screen and (max-width: 768px) {
+  .profileImage{
+    width: 10rem;
   }
+  .topName{
+    font-size: var(--normal-font-size);
+  }
+  .mainTitle {
+    font-size: var(--h2-font-size);
+    line-height: normal;
+  }
+
 }

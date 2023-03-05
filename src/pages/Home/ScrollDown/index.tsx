@@ -7,7 +7,7 @@ import './styles.scss'
 
 export default function ScrollDownLottie() {
 
-    const [animationState, setanimationState] = useState({
+    const [animationState, setAnimationState] = useState({
         isStopped: false, isPaused: false
     })
 
@@ -24,9 +24,9 @@ export default function ScrollDownLottie() {
 
     return (
         <div className="scrollDownLottie">
-            <a href="">
+            <a href="#About">
                 <Lottie options={defaultOptions}
-                    width={60}
+                    width={70}
                     isStopped={animationState.isStopped}
                     isPaused={animationState.isPaused} />
             </a>

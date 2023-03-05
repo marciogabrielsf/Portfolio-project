@@ -27,39 +27,89 @@
       box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
     }
   }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
 
-  .nav {
-    padding: 0 2rem 0 2rem;
+  .leftMail {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: var(--header-height);
+    gap: 1rem;
 
-    .leftMail {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-
-      .fa-envelope {
-        font-size: 1.5rem;
-      }
+    .fa-envelope {
+      font-size: 1.5rem;
     }
+  }
 
-    .nav_list {
-      color: var(--mid-gray);
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+}
 
-      a:hover {
-        text-decoration: underline;
-      }
 
-      .hireMeButton {
-        border-radius: var(--default-border-radius);
-        padding: 0.5rem 1rem 0.5rem 1rem;
-      }
+.nav_list {
+  color: var(--mid-gray);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  
+  a{
+    transition: 0.2s;
+    &:hover {
+      color: #FFF;
     }
+  }
+
+  .hireMeButton {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+}
+
+.nav_toggle, .close_button {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .nav_list_div{
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: var(--z-modal);
+    border-left: solid .1rem;
+    border-color: var(--complementary-color-2);
+    padding: 3rem;
+    position: fixed;
+    height: 100vh;
+    right: -20rem;
+    top:0;
+    backdrop-filter: blur(var(--default-backdrop-filter));
+    -webkit-backdrop-filter: blur(var(--default-backdrop-filter));
+    background-color: rgba(var(--complementary-color-1-rgb), 0.4);
+    p, button{
+      display: none;
+    }
+    
+  }
+  .nav_list {
+    font-size: var(--h2-font-size);
+    padding: 3rem;
+    align-items: start;
+    gap: 1.1rem;
+    flex-direction: column;
+  }
+  .nav_toggle, .close_button {
+    display: block;
+  }
+
+  .mail{
+    // font-size: var(--small-font-size);
+    display: none;
+  }
+
+  .isShown{
+    right: 0;
   }
 }
