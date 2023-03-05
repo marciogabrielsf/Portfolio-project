@@ -1,0 +1,28 @@
+.aboutDiv{
+
+    max-width: 40rem;
+
+    .mainHeadline{
+        font-size: var(--h3-font-size);
+        color: var(--secondary-color);
+        font-weight: var(--font-bold);
+        padding: 2rem 0 2rem 0;
+
+    }
+ 
+ 
+    .mainText{
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-normal);
+    }
+}
+
+.dd-highlight{
+    color: var(--secondary-color);
+    font-weight: var(--font-bold);
+    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 0%,#d6bb21 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
