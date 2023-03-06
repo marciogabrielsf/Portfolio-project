@@ -1,15 +1,16 @@
-.project_header{
-    display:flex;
-    flex-direction: column;
-    
-    margin: 10rem 0 15rem 0;
+.project_header {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10rem 0 20rem 0;
 }
 
-.headline{
-    font-size: 5rem;
-    font-weight: var(--font-bold);
-    background: #1345BA;
-background: linear-gradient(to right, #1345BA 0%, #4F73C6 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.headline {
+  font-size: 4rem;
+  font-weight: var(--font-bold);
+  background: #1345ba;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #1345ba 0%, #4f73c6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

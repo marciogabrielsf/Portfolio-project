@@ -24,11 +24,12 @@ export default function ScrollDownLottie() {
 
     return (
         <div className="scrollDownLottie">
-            <a href="#About">
+            <a className='scrollDownDiv' href="#About">
                 <Lottie options={defaultOptions}
                     width={70}
                     isStopped={animationState.isStopped}
                     isPaused={animationState.isPaused} />
+                <h3 className='keep_reading'>Continue Lendo</h3>
             </a>
         </div>
     )

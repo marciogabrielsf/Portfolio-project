@@ -37,7 +37,7 @@ export default function Header() {
                                 </li>
                             )
                         })}
-                        <button className='hireMeButton'>Me Contrate Hoje!</button>
+                        {/* <button className='hireMeButton'>Me Contrate Hoje!</button> */}
                     </ul>
                 </div>
 

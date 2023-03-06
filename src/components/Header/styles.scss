@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 1024px) {
   .nav_list_div{
-    transition: 1s;
+    transition: 0.8s;
     transition-timing-function: ease-in-out;
     z-index: var(--z-modal);
     border-left: solid .1rem;
@@ -107,8 +107,8 @@
     display: block;
   }
 
+
   .mail{
-    // font-size: var(--small-font-size);
     display: none;
   }
 
