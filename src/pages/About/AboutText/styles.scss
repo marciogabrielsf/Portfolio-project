@@ -39,9 +39,13 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     gap: 0 1rem;
-    
-    li::before{
-        content: "▹ ";
-        color: var(--secondary-color);
+
+    li{
+        font-size: var(--h3-font-size);
+        &::before{
+            content: "▹ ";
+            color: var(--secondary-color);
+        }
     }
+    
 }
