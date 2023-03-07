@@ -49,3 +49,14 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    .mainText{
+        font-size: var(--normal-font-size);
+    }
+    .technologies{
+        li{
+            font-size: var(--normal-font-size);
+        }
+    }
+}

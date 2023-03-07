@@ -1,5 +1,8 @@
 :root {
   --project-phone-width: 32rem;
+  --project-phone-1300px-width: 30rem;
+  --project-phone-1024px-width: 20rem;
+  --project-phone-1024px-height: 35rem;
   --project-phone-margin-right: 6rem;
   --description-margin-top: 3rem;
 }
@@ -24,6 +27,16 @@
   }
 }
 
+.gradient{
+  display: none;
+  z-index: 4;
+  height: 30%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent, var(--main-color));
+}
 
 .project_one_container {
   margin: 5rem 0 5rem 0;
@@ -34,4 +47,50 @@
 .project_phone {
   width: var(--project-phone-width);
   margin-right: var(--project-phone-margin-right);
+  position: relative;
+
+}
+
+@media screen and (max-width: 1300px) {
+  .project_phone {
+    width: var(--project-phone-1300px-width);
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .project_phone {
+    width: var(--project-phone-1024px-width);
+  }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .copy_headline{
+    margin-top: 3rem;
+    font-size: var(--h1-font-size);
+  }
+  .copy_description{
+    font-size: var(--h3-font-size);
+  }
+  .links{
+    justify-content: center;
+  }
+
+  .gradient{
+    margin: 0;
+    
+    display: block;
+  }
+  .project_phone{
+    overflow: hidden;
+    margin: 0;
+    width: var(--project-phone-1024px-width);
+    height: var(--project-phone-1024px-height);
+  }
+  .project_one_container{
+    flex-direction: column;;
+  }
+  
 }

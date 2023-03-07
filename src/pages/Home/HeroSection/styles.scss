@@ -31,13 +31,14 @@
 
 @media screen and (max-width: 768px) {
   .profileImage{
-    width: 10rem;
+    width: 8rem;
   }
   .topName{
     font-size: var(--normal-font-size);
   }
   .mainTitle {
-    font-size: var(--h2-font-size);
+    text-align: start;
+    font-size: var(--h1-font-size);
     line-height: normal;
   }
 

@@ -1,7 +1,3 @@
-import React from 'react'
-
-import ProfileImage from '@/assets/profile.jpeg'
-
 import './styles.scss'
 import AboutText from './AboutText'
 

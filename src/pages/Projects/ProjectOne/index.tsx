@@ -11,9 +11,10 @@ export default function ProjectOne() {
       <div className="graphics">
         <figure className='project_phone'>
           <img src={Phone} alt="Voucher C.R.U.D App Project on a iPhone 14 pro max frame" />
+          <div className="gradient"></div>
         </figure>
       </div>
-      <div className="copy">
+      <div className="copy_one">
         <h1 className='copy_headline'>{ProjectsData[projectID].title}</h1>
         <p className='copy_description'>{ProjectsData[projectID].descriptionOne}</p>
         <p className='copy_description'>{ProjectsData[projectID].descriptionTwo}</p>
