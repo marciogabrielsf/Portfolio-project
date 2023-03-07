@@ -6,11 +6,20 @@
 }
 
 .headline {
-  font-size: 4rem;
+  font-size: var(--xxl-font-size);
   font-weight: var(--font-bold);
   background: #1345ba;
   margin-bottom: 1rem;
   background: linear-gradient(to right, #1345ba 0%, #4f73c6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .headline{
+    font-size: var(--h1-font-size);
+  }
+  .sub_headline{
+    font-size: var(--normal-font-size);
+  }
 }

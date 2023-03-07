@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg';
-
 // components //
 import Header from "./components/Header";
 

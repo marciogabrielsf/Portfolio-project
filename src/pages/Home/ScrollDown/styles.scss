@@ -1,4 +1,8 @@
 .scrollDownDiv{
     display: flex;
+    color: var(--var-title-color-inv);
 align-items: center;;
+&:hover{
+    color: var(--mid-gray);
+}
 }

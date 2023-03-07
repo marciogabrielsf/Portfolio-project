@@ -1,0 +1,75 @@
+.contact_form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_container {
+  width: 100%;
+  margin-top: 5rem;
+  max-width: 30rem;
+  box-shadow: 1rem;
+  box-shadow: 0px 0px 5rem 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactHeadline {
+  font-size: var(--h3-font-size);
+  color: var(--secondary-color);
+  font-weight: var(--font-bold);
+  padding: 1rem 0 1rem 0;
+}
+
+.inputForm {
+  div {
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    label{
+        transition: 0.2s;
+        position: absolute;
+        pointer-events: none;
+        padding: 1rem;
+        font-size: var(--h3-font-size);
+    }
+    .inputBox:valid ~label, .inputBox:focus ~label{
+        color: #FFF;
+        transform: translate(0rem, -2rem) scale(75%);
+        background: (var(--complementary-color-1));
+    }
+    
+    @media screen and (max-width: 768px) {
+        
+        label, .inputBox{
+            font-size: (var(--normal-font-size));
+        }
+    }
+}
+
+
+  .inputBox{
+    -webkit-user-select:text;
+    font-size: var(--h3-font-size);
+    padding: 1rem;
+    resize: vertical;
+    background: transparent;
+    outline: none;
+    border: solid 0.1rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    &:focus, &:valid{
+        color: #FFF;
+        border-color: #FFF;
+    }
+  }
+
+
+  .submit_button {
+    border-radius: calc(var(--default-border-radius) * 0.5);
+    background-color: var(--secondary-color);
+    color: #FFF;
+    gap: 1rem;
+    &:hover{
+        background-color: #099313;
+    }
+  }
+}

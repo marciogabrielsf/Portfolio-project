@@ -21,12 +21,7 @@
   line-height: 3.6rem;
   font-size: var(--xl-font-size);
   font-weight: var(--font-bold);
-  background-image: -webkit-linear-gradient(315deg, #969696 0%,#0031a3 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-
+  color: var(--var-title-color-inv);
 }
 
 @media screen and (max-width: 768px) {

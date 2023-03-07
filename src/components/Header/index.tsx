@@ -15,7 +15,7 @@ export default function Header() {
             <nav className='nav container'>
                 <div className='leftMail'>
                     <a className='redirect' href={`mailto:${ActualEmail}`}>
-                        <button className='mailButton'>
+                        <button className='mailButton defaultButton'>
                             <i className="fa-regular fa-envelope"></i>
                         </button>
                     </a>
