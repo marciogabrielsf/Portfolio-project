@@ -36,6 +36,16 @@ export const NavBarLinks: NavBarTypes[] = [
         id: 6,
         href: 'https://www.linkedin.com/in/marciogabrielsf/',
         item: 'LinkedIn'
+    },
+    {
+        id: 7,
+        href: '',
+        item: '/'
+    },
+    {
+        id: 8,
+        href: '#Contact',
+        item: 'Contato'
     }
     
 ]

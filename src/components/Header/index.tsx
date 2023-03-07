@@ -6,12 +6,9 @@ import { NavBarLinks, ActualEmail } from './static'
 export default function Header() {
 
     const [toggleMenuState, setToggleMenuState] = useState(false);
-
-
     function handleToggleMenu() {
         setToggleMenuState(!toggleMenuState)
     }
-
 
     return (
         <header className='header'>
