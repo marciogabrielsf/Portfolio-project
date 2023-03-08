@@ -57,9 +57,9 @@
     transition: 0.8s;
     transition-timing-function: ease-in-out;
     z-index: var(--z-modal);
-    border-left: solid 0.1rem;
-    border-color: var(--complementary-color-2);
-    padding: 3rem;
+    border-left: var(--hamburguer-menu-background-border);
+    border-color: var(--hamburguer-menu-background-border-color);
+    padding: 2rem;
     position: fixed;
     height: 100vh;
     right: -20rem;

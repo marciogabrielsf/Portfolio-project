@@ -1,12 +1,4 @@
 
-export const container = {
-    show: {
-        transition: {
-            staggerChildren: 0.3,
-            delayChildren: .1
-        }
-    }
-} 
 
 export const motionItem = {
     hidden: {
@@ -18,6 +10,7 @@ export const motionItem = {
         x: 0,
         transition: {
             type: "spring", stiffness: 50,
+            delay: .5
         }
     },
     start: {

@@ -3,7 +3,8 @@
   /* Colors */
 
   --main-color: #000e2e;
-  --secondary-color: #06750e;
+  --secondary-color: #003cc7;
+  --gradient-second-color: #3e6ad0;
   --complementary-color-1: #00216e;
   --complementary-color-1-rgb: 0, 33, 110;
   --complementary-color-2: #0038ba;
@@ -13,6 +14,8 @@
   --var-title-color-inv: #fff;
   --default-backdrop-filter: 4rem;
   --default-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  --hamburguer-menu-background-border-color: var(--complementary-color-1);
+  --hamburguer-menu-background-border: solid 0.1rem;
 
   /* Fonts */
 
@@ -115,10 +118,24 @@ button {
   gap: 1.5rem;
 }
 
+.dd-highlight {
+  color: var(--secondary-color);
+  font-weight: var(--font-bold);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--secondary-color) 0%,
+    var(--gradient-second-color) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .shinyContainer {
   padding: 3rem;
   border-radius: var(--default-border-radius);
-  background-color: rgba(var(--complementary-color-1-rgb), 0.4);
+  background-color: rgba(var(--complementary-color-1-rgb), 0.2);
   border: solid 0.15rem;
   border-color: var(--complementary-color-2);
 }
@@ -130,8 +147,6 @@ button {
 
 .Main {
   background-color: var(--main-color);
-  background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000e2e 2px);
-  background-size: 80px 80px;
   overflow: hidden;
 }
 
@@ -142,10 +157,9 @@ button {
   color: var(--mid-gray);
   padding: 0.8rem;
   border-radius: 50%;
-  border: solid 0.1rem;
-  border-color: var(--complementary-color-2);
+  // border: solid 0.1rem;
+  // border-color: var(--complementary-color-2);
   background-color: var(--complementary-color-1);
-  box-shadow: var(--default-box-shadow);
   transition: 0.2s;
   &:hover {
     background-color: var(--hovered-color);

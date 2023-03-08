@@ -1,35 +1,38 @@
-.contact_text{
+.contact_text {
+  font-size: var(--xxl-font-size);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    var(--secondary-color) 0%,
+    var(--gradient-second-color) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact_headline {
+  small {
     font-size: var(--xxl-font-size);
-    background-image: -webkit-linear-gradient(45deg, var(--secondary-color) 0%,#d6bb21 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
+  }
 }
 
-.contact_headline{
-    small{
-        font-size: var(--xxl-font-size);
-    }
-}
-
-.contact_sub_headline{
-    font-weight: var(--font-normal);
-    font-size: var(--l-font-size);
-    margin-top: 2rem;
+.contact_sub_headline {
+  font-weight: var(--font-normal);
+  font-size: var(--l-font-size);
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
-    .contact_text{
-        font-size: var(--h1-font-size);    
+  .contact_text {
+    font-size: var(--h1-font-size);
+  }
+  .contact_headline {
+    small {
+      font-size: var(--h1-font-size);
     }
-    .contact_headline{
-        small{
-            font-size: var(--h1-font-size);
-        }
-    }
-    .contact_sub_headline{
-        font-size: var(--h3-font-size);
-    }
-
+  }
+  .contact_sub_headline {
+    font-size: var(--h3-font-size);
+  }
 }

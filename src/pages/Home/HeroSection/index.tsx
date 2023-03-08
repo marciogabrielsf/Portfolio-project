@@ -11,7 +11,7 @@ export default function HeroSection() {
       animate='show' variants={container} className='mastHead'>
       <motion.img variants={motionItem} className='profileImage' src={ProfileImage} alt="" width={180} />
       <motion.p variants={motionItem} className='topName'>Olá, meu nome é Márcio.</motion.p>
-      <motion.h1 variants={motionItem} className="mainTitle">E vou <span className='dd-highlight'>Elevar o patamar</span> da sua compania com conhecimento e experiência.</motion.h1>
+      <motion.h1 variants={motionItem} className="mainTitle">E vou <span className='dd-highlight'>elevar o patamar</span> da sua compania com conhecimento e experiência.</motion.h1>
     </motion.div>
   )
 }
