@@ -34,6 +34,7 @@ export default function Header() {
                 <motion.div variants={motionItem} className="nav_toggle" onClick={handleToggleMenu}>
                     <i className="fa-solid fa-bars"></i>
                 </motion.div>
+
                 <div className={`nav_list_div ${toggleMenuState ? 'isShown' : ''}`}>
                     <div className="close_button">
                         <i onClick={handleToggleMenu} className="fa-solid fa-xmark"></i>
