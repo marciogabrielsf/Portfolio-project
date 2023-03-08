@@ -1,31 +1,66 @@
+
+import { motion } from 'framer-motion';
 import ProjectTwo from '@/assets/ProjectTwo.png'
 import { ProjectsData } from '../static'
 import './styles.scss'
+
+import { motionItem } from './motion';
 
 
 export default function ProjectOne() {
   const projectID = 1;
 
+  const viewportConfiguration = {
+    once: true,
+  }
+
   return (
-    <div className='project_two_container section'>
-      <div className="project_two">
+    <motion.div className='project_two_container section'>
+      <div
+        className="project_two">
         <div className="copy_project_two">
-          <h1 className='copy_headline_two'>{ProjectsData[projectID].title}</h1>
-          <p className='copy_description_two'>{ProjectsData[projectID].descriptionOne}</p>
-          <p className='copy_description_two'>{ProjectsData[projectID].descriptionTwo}</p>
-          <div className="links">
+          <motion.h1
+            variants={motionItem}
+            initial='hidden'
+            whileInView='show'
+            viewport={viewportConfiguration}
+            className='copy_headline_two'>
+            {ProjectsData[projectID].title}
+          </motion.h1>
+          <motion.p
+            variants={motionItem}
+            initial='hidden'
+            whileInView='show'
+            viewport={viewportConfiguration}
+            className='copy_description_two'>
+            {ProjectsData[projectID].descriptionOne}
+          </motion.p>
+          <motion.p
+            variants={motionItem}
+            initial='hidden'
+            whileInView='show'
+            viewport={viewportConfiguration}
+            className='copy_description_two'>
+            {ProjectsData[projectID].descriptionTwo}
+          </motion.p>
+          <motion.div
+            variants={motionItem}
+            initial='hidden'
+            whileInView='show'
+            viewport={viewportConfiguration}
+            className="links">
             <a target="_blank" rel="noopener noreferrer" href={ProjectsData[projectID].githubLink}>
               <i className=" fa-brands fa-github">
               </i>
             </a>
-          </div>
+          </motion.div>
         </div>
-        <div className="graphics_two">
+        <motion.div variants={motionItem} initial='imageHide' whileInView='imageShow' className="graphics_two">
           <figure className='project_photo'>
             <img src={ProjectTwo} alt="Voucher C.R.U.D App Project on a iPhone 14 pro max frame" />
           </figure>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }

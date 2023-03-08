@@ -1,5 +1,3 @@
-
-
 export const motionItem = {
     hidden: {
         opacity: 0,
@@ -16,8 +14,4 @@ export const motionItem = {
     start: {
         
     },
-    finish: {
-
-    }
-
 }
