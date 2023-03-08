@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion';
+import { container, motionItem } from './motion'
+
 import './styles.scss'
 
 import { NavBarLinks, ActualEmail } from './static'
@@ -12,16 +15,25 @@ export default function Header() {
 
     return (
         <header className='header'>
-            <nav className='nav container'>
-                <div className='leftMail'>
+            <motion.nav
+                className='nav container'
+                initial='hidden'
+                animate='show'
+                variants={container}
+                exit='exit'
+            >
+                <motion.div variants={motionItem} className='leftMail'>
                     <a className='redirect' href={`mailto:${ActualEmail}`}>
                         <button className='mailButton defaultButton'>
                             <i className="fa-regular fa-envelope"></i>
                         </button>
                     </a>
                     <p className='mail'>{ActualEmail}</p>
-                </div>
+                </motion.div>
 
+                <motion.div variants={motionItem} className="nav_toggle" onClick={handleToggleMenu}>
+                    <i className="fa-solid fa-bars"></i>
+                </motion.div>
                 <div className={`nav_list_div ${toggleMenuState ? 'isShown' : ''}`}>
                     <div className="close_button">
                         <i onClick={handleToggleMenu} className="fa-solid fa-xmark"></i>
@@ -29,19 +41,14 @@ export default function Header() {
                     <ul className="nav_list">
                         {NavBarLinks.map(({ item, href }) => {
                             return (
-                                <li className='navItens'>
+                                <motion.li variants={motionItem} className='navItens'>
                                     {href !== '' ? <a onClick={handleToggleMenu} href={href}>{item}</a> : <p>{item}</p>}
-                                </li>
+                                </motion.li>
                             )
                         })}
                     </ul>
                 </div>
-
-                <div className="nav_toggle" onClick={handleToggleMenu}>
-                    <i className="fa-solid fa-bars"></i>
-                </div>
-
-            </nav>
+            </motion.nav>
         </header>
     )
 }

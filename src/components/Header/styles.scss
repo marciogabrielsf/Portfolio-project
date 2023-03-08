@@ -12,8 +12,8 @@
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
-  i{
-    cursor:pointer;
+  i {
+    cursor: pointer;
   }
 
   .leftMail {
@@ -26,20 +26,18 @@
       font-size: 1.5rem;
     }
   }
-
 }
-
 
 .nav_list {
   color: var(--mid-gray);
   display: flex;
   align-items: center;
   gap: 2rem;
-  
-  a{
+
+  a {
     transition: 0.2s;
     &:hover {
-      color: #FFF;
+      color: #fff;
     }
   }
 
@@ -49,31 +47,30 @@
   }
 }
 
-.nav_toggle, .close_button {
+.nav_toggle,
+.close_button {
   display: none;
 }
 
-
-
 @media screen and (max-width: 1024px) {
-  .nav_list_div{
+  .nav_list_div {
     transition: 0.8s;
     transition-timing-function: ease-in-out;
     z-index: var(--z-modal);
-    border-left: solid .1rem;
+    border-left: solid 0.1rem;
     border-color: var(--complementary-color-2);
     padding: 3rem;
     position: fixed;
     height: 100vh;
     right: -20rem;
-    top:0;
+    top: 0;
     backdrop-filter: blur(var(--default-backdrop-filter));
     -webkit-backdrop-filter: blur(var(--default-backdrop-filter));
     background-color: rgba(var(--complementary-color-1-rgb), 0.4);
-    p, button{
+    p,
+    button {
       display: none;
     }
-    
   }
   .nav_list {
     font-size: var(--h2-font-size);
@@ -82,16 +79,16 @@
     gap: 1.1rem;
     flex-direction: column;
   }
-  .nav_toggle, .close_button {
+  .nav_toggle,
+  .close_button {
     display: block;
   }
 
-
-  .mail{
+  .mail {
     display: none;
   }
 
-  .isShown{
+  .isShown {
     right: 0;
   }
 }

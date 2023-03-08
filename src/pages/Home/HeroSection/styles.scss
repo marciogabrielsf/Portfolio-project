@@ -6,10 +6,9 @@
   gap: 1rem;
   text-align: center;
 
-  .profileImage{
+  .profileImage {
     border-radius: 50%;
   }
-
 }
 
 .topName {
@@ -25,10 +24,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .profileImage{
+  .profileImage {
     width: 8rem;
   }
-  .topName{
+  .topName {
     font-size: var(--normal-font-size);
   }
   .mainTitle {
@@ -36,5 +35,4 @@
     font-size: var(--h1-font-size);
     line-height: normal;
   }
-
 }

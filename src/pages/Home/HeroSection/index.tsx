@@ -1,4 +1,5 @@
-import React from 'react'
+import { motion } from 'framer-motion'
+import { container, motionItem } from './motion'
 
 import ProfileImage from '@/assets/profile.jpeg'
 
@@ -6,10 +7,11 @@ import './styles.scss'
 
 export default function HeroSection() {
   return (
-    <div className='mastHead'>
-      <img className='profileImage' src={ProfileImage} alt="" width={180} />
-      <p className='topName'>Olá, meu nome é Márcio.</p>
-      <h1 className="mainTitle">E vou <span className='dd-highlight'>Elevar</span> o patamar da sua compania com conhecimento e experiência.</h1>
-    </div>
+    <motion.div initial='hidden'
+      animate='show' variants={container} className='mastHead'>
+      <motion.img variants={motionItem} className='profileImage' src={ProfileImage} alt="" width={180} />
+      <motion.p variants={motionItem} className='topName'>Olá, meu nome é Márcio.</motion.p>
+      <motion.h1 variants={motionItem} className="mainTitle">E vou <span className='dd-highlight'>Elevar o patamar</span> da sua compania com conhecimento e experiência.</motion.h1>
+    </motion.div>
   )
 }

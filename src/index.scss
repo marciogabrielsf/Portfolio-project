@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
 :root {
   /* Colors */
 
-  --main-color: #000E2E;
+  --main-color: #000e2e;
   --secondary-color: #06750e;
-  --complementary-color-1: #00216E;
+  --complementary-color-1: #00216e;
   --complementary-color-1-rgb: 0, 33, 110;
-  --complementary-color-2: #0038BA;
+  --complementary-color-2: #0038ba;
   --hovered-color: #002988;
   --mid-gray: #a5a5a5;
   --var-title-color: #000;
@@ -78,8 +78,6 @@ textarea {
   font-size: var(--body-font-size);
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -93,8 +91,8 @@ a {
   cursor: pointer;
   transition: 0.2s;
 }
-a:hover{
-  color: #FFF;
+a:hover {
+  color: #fff;
 }
 
 button {
@@ -105,7 +103,7 @@ button {
 
 /* layout defaults */
 
-.section{
+.section {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -117,7 +115,7 @@ button {
   gap: 1.5rem;
 }
 
-.shinyContainer{
+.shinyContainer {
   padding: 3rem;
   border-radius: var(--default-border-radius);
   background-color: rgba(var(--complementary-color-1-rgb), 0.4);
@@ -130,9 +128,9 @@ button {
   margin: 0 auto 0 auto;
 }
 
-.Main{
+.Main {
   background-color: var(--main-color);
-  background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000E2E 2px);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0.1) 1px, #000e2e 2px);
   background-size: 80px 80px;
   overflow: hidden;
 }
@@ -158,21 +156,17 @@ button {
   }
 }
 
-
 @media screen and (max-width: 1300px) {
-  .container{
+  .container {
     margin: 0 var(--x-default-padding) 0 var(--x-default-padding);
   }
-  
 }
 
 @media screen and (max-width: 1024px) {
-  
 }
 
 @media screen and (max-width: 768px) {
-  .shinyContainer{
+  .shinyContainer {
     padding: 1rem;
   }
-
 }
