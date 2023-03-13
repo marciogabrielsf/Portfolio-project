@@ -20,7 +20,6 @@ export default function ContactForm() {
               className='inputBox'
               id='message'
               required={true}
-
               name='message'
               rows={6}
             ></textarea>

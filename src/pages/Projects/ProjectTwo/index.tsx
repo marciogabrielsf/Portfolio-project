@@ -55,7 +55,7 @@ export default function ProjectOne() {
             </a>
           </motion.div>
         </div>
-        <motion.div variants={motionItem} initial='imageHide' whileInView='imageShow' className="graphics_two">
+        <motion.div variants={motionItem} viewport={viewportConfiguration} initial='imageHide' whileInView='imageShow' className="graphics_two">
           <figure className='project_photo'>
             <img src={ProjectTwo} alt="Voucher C.R.U.D App Project on a iPhone 14 pro max frame" />
           </figure>
