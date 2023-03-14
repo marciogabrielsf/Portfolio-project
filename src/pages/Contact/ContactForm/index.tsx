@@ -20,14 +20,15 @@ export default function ContactForm() {
               className='inputBox'
               id='message'
               required={true}
-
               name='message'
               rows={6}
             ></textarea>
             <label htmlFor="message">Mensagem</label>
           </div>
           <div className="contact_submit">
-            <button className='defaultButton submit_button' type="submit"><span className='fa-regular fa-envelope'></span>Enviar</button>
+            <button className='defaultButton submit_button' type="submit">
+              <span className='fa-regular fa-envelope'></span>Enviar
+            </button>
           </div>
         </form>
       </div>

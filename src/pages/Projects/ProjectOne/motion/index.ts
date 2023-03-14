@@ -8,7 +8,6 @@ export const motionItem = {
         x: 0,
         transition: {
             type: "spring", stiffness: 50,
-            delay: .5
         }
     },
     start: {
