@@ -23,7 +23,7 @@ export default function ProjectOne() {
     }
   );
 
-  const phoneY = useTransform(scrollYProgress, [0, 1], [200, -200]);
+  const phoneY = useTransform(scrollYProgress, [0, 0.3], [100, -100]);
 
   return (
     <motion.div className='project_one_container section'>
