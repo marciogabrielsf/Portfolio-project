@@ -14,13 +14,16 @@ export default function AboutText() {
         </motion.p>
         <motion.p variants={motionItem} className="mainText">Algumas tecnologias que eu trabalho:</motion.p>
         <motion.ul variants={motionItem} className='technologies'>
+          <li>HTML</li>
           <li>JavaScript</li>
           <li>React</li>
+          <li>TypeScript</li>
+          <li>NodeJS</li>
+          <li>Tailwind</li>
+          <li>React Native</li>
+          <li>Flutter</li>
           <li>mongoDB</li>
           <li>mySQL</li>
-          <li>Flutter</li>
-          <li>NodeJS</li>
-          <li>TypeScript</li>
         </motion.ul>
       </div>
     </motion.div>
