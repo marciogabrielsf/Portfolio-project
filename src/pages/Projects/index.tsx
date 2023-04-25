@@ -4,6 +4,7 @@ import './styles.scss'
 import ProjectHeader from './Header'
 import ProjectOne from './ProjectOne'
 import ProjectTwo from './ProjectTwo'
+import ProjectThree from './ProjectThree'
 
 export default function Projects() {
   return (
@@ -12,6 +13,7 @@ export default function Projects() {
         <ProjectHeader />
         <ProjectOne />
         <ProjectTwo />
+        <ProjectThree />
       </div>
     </section>
   )
