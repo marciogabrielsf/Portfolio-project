@@ -1,13 +1,13 @@
 
 import { motion } from 'framer-motion';
-import ProjectTwo from '@/assets/ProjectTwo.png'
+import ProjectTwoImage from '@/assets/ProjectTwo.png'
 import { ProjectsData } from '../static'
 import './styles.scss'
 
 import { motionItem } from './motion';
 
 
-export default function ProjectOne() {
+export default function ProjectTwo() {
   const projectID = 1;
 
   const viewportConfiguration = {
@@ -61,7 +61,7 @@ export default function ProjectOne() {
           whileInView='imageShow'
           className="graphics_two">
           <figure className='project_photo'>
-            <img src={ProjectTwo} alt="Voucher C.R.U.D App Project on a iPhone 14 pro max frame" />
+            <img src={ProjectTwoImage} alt="Image of a screen with a Real to dollar converter" />
           </figure>
         </motion.div>
       </div>

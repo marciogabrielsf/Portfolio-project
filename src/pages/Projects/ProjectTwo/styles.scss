@@ -5,7 +5,6 @@
   box-shadow: var(--default-box-shadow);
   transition: 0.2s;
   &:hover {
-    transform: translate(0.5rem, -0.5rem);
     box-shadow: -15px 20px 0px 0px rgba(var(--complementary-color-1-rgb), 0.5);
   }
 }
