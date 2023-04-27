@@ -9,10 +9,10 @@ import Contact from './pages/Contact';
 function App() {
 
   return (
-    <div className='App'>
+    <div className='app'>
       <Header />
 
-      <main className='Main'>
+      <main className='main'>
         <Home />
         <About />
         <Projects />
