@@ -64,13 +64,28 @@
     }
   }
 
+  .error_hidden {
+    opacity: 0;
+  }
+
+  .submit_error {
+    transition: 0.5s;
+    color: #f00;
+    border-color: #f00;
+  }
+
   .submit_button {
     border-radius: calc(var(--default-border-radius) * 0.5);
     background-color: var(--secondary-color);
+    margin-bottom: 1rem;
     color: #fff;
     gap: 1rem;
     &:hover {
       background-color: #004cff;
     }
   }
+}
+
+.success {
+  background-color: green !important;
 }
