@@ -3,6 +3,13 @@
   flex-direction: column;
 
   margin: 10rem 0 10rem 0;
+
+  hr {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #1345ba;
+    border: none;
+  }
 }
 
 .headline {
@@ -13,6 +20,10 @@
   background: linear-gradient(to right, #1345ba 0%, #4f73c6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sub_headline {
+  font-size: var(--h2-font-size);
 }
 
 @media screen and (max-width: 768px) {
