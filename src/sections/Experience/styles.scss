@@ -1,0 +1,36 @@
+.experience_container {
+	position: relative;
+}
+
+.experience_title {
+	font-size: var(--xl-font-size);
+	font-weight: var(--font-bold);
+	color: var(--title-color);
+}
+.experience_subtitle {
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	color: #999999;
+	font-weight: var(--font-bold);
+	font-size: var(--h1-font-size);
+}
+
+.show_more_button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: var(--h3-font-size);
+	width: fit-content;
+	border-radius: 999px;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	background-color: var(--complementary-color-1);
+	transition: 0.2s;
+
+	&:hover {
+		background-color: var(--complementary-color-2);
+	}
+
+	&:active {
+		transform: translateX(-50%) translateY(0.2rem);
+	}
+}
