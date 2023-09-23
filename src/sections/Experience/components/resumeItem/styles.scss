@@ -1,0 +1,32 @@
+.resume_container {
+	display: flex;
+	position: relative;
+	max-width: 50rem;
+	gap: 1rem;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: rgba(#0038ba, 0.2);
+}
+
+.resume_highlight {
+	color: var(--gradient-second-color);
+}
+
+.resume_title {
+	font-size: var(--h2-font-size);
+	font-weight: var(--font-bold);
+}
+.resume_date {
+	font-size: var(--h3-font-size);
+	color: #999999;
+}
+
+.experience_description {
+	font-size: var(--h3-font-size);
+	&::before {
+		content: "▹ ";
+		color: var(--secondary-color);
+	}
+}

@@ -1,183 +1,186 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
 :root {
-  /* Colors */
+	/* Colors */
 
-  --main-color: #000e2e;
-  --secondary-color: #003cc7;
-  --gradient-second-color: #3e6ad0;
-  --complementary-color-1: #00216e;
-  --complementary-color-1-rgb: 0, 33, 110;
-  --complementary-color-2: #0038ba;
-  --hovered-color: #002988;
-  --mid-gray: #dfdfdf;
-  --var-title-color: #000;
-  --var-title-color-inv: #fff;
-  --default-backdrop-filter: 4rem;
-  --default-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
-  --hamburguer-menu-background-color: var(--complementary-color-1);
+	--main-color: #0a101e;
+	--secondary-color: #003cc7;
+	--gradient-second-color: #3e6ad0;
+	--complementary-color-1: #00216e;
+	--complementary-color-1-rgb: 0, 33, 110;
+	--complementary-color-2: #0038ba;
+	--hovered-color: #002988;
+	--mid-gray: #dfdfdf;
+	--var-title-color: #000;
+	--var-title-color-inv: #fff;
+	--default-backdrop-filter: 4rem;
+	--default-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+	--hamburguer-menu-background-color: var(--complementary-color-1);
 
-  /* Fonts */
+	/* Fonts */
 
-  --body-font: "Nunito";
-  --xxl-font-size: 3.5rem;
-  --xl-font-size: 3rem;
-  --l-font-size: 2.25rem;
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.825rem;
-  --smaller-font-size: 0.75rem;
-  --tiny-font-size: 0.6rem;
-  --font-extra-thin: 200;
-  --font-thin: 300;
-  --font-normal: 400;
-  --font-medium: 600;
-  --font-bold: 700;
-  --font-bolder: 800;
-  --default-icon-size: 2rem;
+	--body-font: "Nunito";
+	--xxl-font-size: 3.5rem;
+	--xl-font-size: 3rem;
+	--l-font-size: 2.25rem;
+	--h1-font-size: 2rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
+	--small-font-size: 0.825rem;
+	--smaller-font-size: 0.75rem;
+	--tiny-font-size: 0.6rem;
+	--font-extra-thin: 200;
+	--font-thin: 300;
+	--font-normal: 400;
+	--font-medium: 600;
+	--font-bold: 700;
+	--font-bolder: 800;
+	--default-icon-size: 2rem;
 
-  /* Margins */
+	/* Margins */
 
-  --default-border-radius: 1rem;
-  --x-default-padding: 1rem;
-  --header-height: 7rem;
+	--default-border-radius: 1rem;
+	--x-default-padding: 1rem;
+	--header-height: 7rem;
 
-  /* Z-Index */
-  --z-top: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
+	/* Z-Index */
+	--z-top: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 i {
-  font-size: var(--default-icon-size);
+	font-size: var(--default-icon-size);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 body,
 button,
 input,
 textarea {
-  color: var(--mid-gray);
-  font-family: var(--body-font);
-  font-size: var(--body-font-size);
+	color: var(--mid-gray);
+	font-family: var(--body-font);
+	font-size: var(--body-font-size);
 }
 
 h1,
 h2,
 h3 {
-  font-weight: var(--font-medium);
-  text-rendering: optimizeLegibility;
+	font-weight: var(--font-medium);
+	text-rendering: optimizeLegibility;
 }
 
 a {
-  color: var(--mid-gray);
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.2s;
+	color: var(--mid-gray);
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
 }
 a:hover {
-  color: #fff;
+	color: #fff;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  outline: none;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 
 /* layout defaults */
 
 .section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid {
-  display: grid;
-  gap: 1.5rem;
+	display: grid;
+	gap: 1.5rem;
 }
 
 .dd-highlight {
-  color: var(--secondary-color);
-  font-weight: var(--font-bold);
-  background-image: -webkit-linear-gradient(
-    45deg,
-    var(--secondary-color) 0%,
-    var(--gradient-second-color) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+	color: var(--secondary-color);
+	font-weight: var(--font-bold);
+	background-image: -webkit-linear-gradient(
+		45deg,
+		var(--secondary-color) 0%,
+		var(--gradient-second-color) 100%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 }
 
 .shinyContainer {
-  padding: 3rem;
-  border-radius: var(--default-border-radius);
-  background-color: rgba(var(--complementary-color-1-rgb), 0.2);
-  border: solid 0.15rem;
-  border-color: var(--complementary-color-2);
+	padding: 3rem;
+	border-radius: var(--default-border-radius);
+	background-color: rgba(var(--complementary-color-1-rgb), 0.2);
+	border: solid 0.15rem;
+	border-color: var(--complementary-color-2);
 }
 
 .container {
-  max-width: 80rem;
-  margin: 0 auto 0 auto;
+	max-width: 80rem;
+	margin: 0 auto 0 auto;
 }
 
 .main {
-  background-color: var(--main-color);
-  overflow: hidden;
+	background-color: var(--main-color);
+	overflow: hidden;
+}
+.clickable_icons {
+	font-size: 2rem;
 }
 
 .defaultButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--mid-gray);
-  padding: 0.8rem;
-  border-radius: 50%;
-  background-color: var(--complementary-color-1);
-  transition: 0.2s;
-  &:hover {
-    background-color: var(--hovered-color);
-  }
-  &:active {
-    transform: translateY(0.2rem);
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--mid-gray);
+	padding: 0.8rem;
+	border-radius: 50%;
+	background-color: var(--complementary-color-1);
+	transition: 0.2s;
+	&:hover {
+		background-color: var(--hovered-color);
+	}
+	&:active {
+		transform: translateY(0.2rem);
+		box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+	}
 }
 
 @media screen and (max-width: 1300px) {
-  .container {
-    margin: 0 var(--x-default-padding) 0 var(--x-default-padding);
-  }
+	.container {
+		margin: 0 var(--x-default-padding) 0 var(--x-default-padding);
+	}
 }
 
 @media screen and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
-  .shinyContainer {
-    padding: 1rem;
-  }
+	.shinyContainer {
+		padding: 1rem;
+	}
 }

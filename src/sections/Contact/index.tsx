@@ -1,5 +1,5 @@
-import ContactForm from './ContactForm'
-import ContactHeader from './ContactHeader'
+import ContactForm from './components/ContactForm'
+import ContactHeader from './components/ContactHeader'
 import './styles.scss'
 
 export default function Contact() {

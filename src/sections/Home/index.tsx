@@ -1,7 +1,7 @@
-import HeroSection from './HeroSection'
+import HeroSection from './components/HeroSection'
 
 import './styles.scss'
-import ScrollDownLottie from './ScrollDown'
+import ScrollDownLottie from './components/ScrollDown'
 
 
 export default function Home() {

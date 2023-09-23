@@ -1,25 +1,25 @@
 // components //
 import Header from "./components/Header";
 // pages //
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Experiences from "./sections/Experience";
 
 function App() {
+	return (
+		<div className="app">
+			<Header />
 
-  return (
-    <div className='app'>
-      <Header />
-
-      <main className='main'>
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
-
-    </div>
-  )
+			<main className="main">
+				<Home />
+				<About />
+				<Experiences />
+				<Projects />
+				<Contact />
+			</main>
+		</div>
+	);
 }
-export default App
+export default App;

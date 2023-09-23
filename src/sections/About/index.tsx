@@ -1,5 +1,5 @@
 import './styles.scss'
-import AboutText from './AboutText'
+import AboutText from './components/AboutText'
 
 export default function About() {
   return (
