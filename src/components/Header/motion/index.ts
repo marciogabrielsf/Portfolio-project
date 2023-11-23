@@ -1,1 +1,1 @@
-export { motionItem, container } from '@/constants/motion';
+export { motionItem, container } from "@/constants/motion";

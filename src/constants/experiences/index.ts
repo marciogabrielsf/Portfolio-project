@@ -2,7 +2,7 @@ export const experiences = [
 	{
 		id: 1,
 		title: "Desenvolvedor Fullstack",
-		company: "Agin.Uece",
+		company: "Agin.UECE",
 		period: "2022 - Atualmente",
 		description: [
 			"Gerenciamento de uma equipe pequena da agência de inovação.",
@@ -21,6 +21,15 @@ export const experiences = [
 	},
 	{
 		id: 3,
+		title: "Desenvolvedor Fullstack",
+		company: "Freelancer",
+		description: [
+			"Desenvolvimento de Landing Pages, Sites e Aplicações Web para diversas empresas brasileiras.",
+		],
+		period: "2020 - Atualmente",
+	},
+	{
+		id: 4,
 		title: "Desenvolvedor Fullstack",
 		company: "Freelancer",
 		description: [

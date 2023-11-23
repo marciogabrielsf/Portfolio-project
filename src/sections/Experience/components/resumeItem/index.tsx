@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.scss";
+import { AnimatePresence, motion } from "framer-motion";
+import { leftToRightItem } from "../../motion";
 
 interface Props {
 	position: string;
@@ -10,7 +12,14 @@ interface Props {
 
 export default function ResumeItem({ position, date, company, description }: Props) {
 	return (
-		<div className="resume_container">
+		<motion.div
+			variants={leftToRightItem}
+			initial="hidden"
+			whileInView={"show"}
+			viewport={{ once: true }}
+			exit={"exit"}
+			className="resume_container"
+		>
 			<div>
 				<h2 className="resume_title">
 					{position} <span className="resume_highlight">@{company}</span>
@@ -20,6 +29,6 @@ export default function ResumeItem({ position, date, company, description }: Pro
 			{description.map((desc) => (
 				<p className="experience_description">{desc}</p>
 			))}
-		</div>
+		</motion.div>
 	);
 }

@@ -5,6 +5,7 @@ import "./styles.scss";
 
 import { motionItem } from "./motion";
 import { BiLink } from "react-icons/bi";
+import { container } from "@/constants/motion";
 
 export default function ProjectTwo() {
 	const projectID = 1;
@@ -14,43 +15,25 @@ export default function ProjectTwo() {
 	};
 
 	return (
-		<motion.div className="project_two_container section">
+		<motion.div
+			variants={container}
+			initial="hidden"
+			whileInView="show"
+			viewport={viewportConfiguration}
+			className="project_two_container section"
+		>
 			<div className="project_two">
 				<div className="copy_project_two">
-					<motion.h1
-						variants={motionItem}
-						initial="hidden"
-						whileInView="show"
-						viewport={viewportConfiguration}
-						className="copy_headline_two"
-					>
+					<motion.h1 variants={motionItem} className="copy_headline_two">
 						{ProjectsData[projectID].title}
 					</motion.h1>
-					<motion.p
-						variants={motionItem}
-						initial="hidden"
-						whileInView="show"
-						viewport={viewportConfiguration}
-						className="copy_description_two"
-					>
+					<motion.p variants={motionItem} className="copy_description_two">
 						{ProjectsData[projectID].descriptionOne}
 					</motion.p>
-					<motion.p
-						variants={motionItem}
-						initial="hidden"
-						whileInView="show"
-						viewport={viewportConfiguration}
-						className="copy_description_two"
-					>
+					<motion.p variants={motionItem} className="copy_description_two">
 						{ProjectsData[projectID].descriptionTwo}
 					</motion.p>
-					<motion.div
-						variants={motionItem}
-						initial="hidden"
-						whileInView="show"
-						viewport={viewportConfiguration}
-						className="links"
-					>
+					<motion.div variants={motionItem} className="links">
 						<a target="_blank" rel="noopener noreferrer" href={ProjectsData[projectID].githubLink}>
 							<i className=" fa-brands fa-github"></i>
 						</a>
@@ -59,12 +42,7 @@ export default function ProjectTwo() {
 						</a>
 					</motion.div>
 				</div>
-				<motion.div
-					variants={motionItem}
-					viewport={viewportConfiguration}
-					initial="imageHide"
-					whileInView="imageShow"
-				>
+				<motion.div variants={motionItem}>
 					<div className="graphics_two">
 						<img
 							src={ProjectTwoImage}
