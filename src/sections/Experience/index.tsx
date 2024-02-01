@@ -31,17 +31,18 @@ export default function Experiences() {
 				</motion.div>
 
 				<div>
-					<AnimatePresence>
+					<AnimatePresence mode="popLayout">
 						{experiences
 							.slice(0, showMore ? 999 : 2)
 							.map(({ id, company, description, period, title }) => (
-								<ResumeItem
-									key={id}
-									company={company}
-									date={period}
-									position={title}
-									description={description}
-								/>
+								<motion.div key={id}>
+									<ResumeItem
+										company={company}
+										date={period}
+										position={title}
+										description={description}
+									/>
+								</motion.div>
 							))}
 					</AnimatePresence>
 				</div>
