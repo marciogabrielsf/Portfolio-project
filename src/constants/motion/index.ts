@@ -43,8 +43,8 @@ export const leftToRightItem: Variants = {
 		x: 0,
 		transition: {
 			type: "spring",
-			stiffness: 200,
-			damping: 20,
+			stiffness: 50,
+			damping: 10,
 		},
 	},
 	exit: {
