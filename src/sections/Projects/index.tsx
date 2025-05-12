@@ -8,15 +8,15 @@ import ProjectThree from "./components/ProjectThree";
 import ProjectFour from "./components/ProjectFour";
 
 export default function Projects() {
-	return (
-		<section id="Projects" className="projectsSection section">
-			<div className="projectsContainer container">
-				<ProjectHeader />
-				<ProjectOne />
-				<ProjectTwo />
-				<ProjectThree />
-				<ProjectFour />
-			</div>
-		</section>
-	);
+    return (
+        <section id="Projects" className="projectsSection section">
+            <div className="projectsContainer container">
+                <ProjectHeader />
+                <ProjectOne />
+                <ProjectTwo />
+                <ProjectThree />
+                <ProjectFour />
+            </div>
+        </section>
+    );
 }

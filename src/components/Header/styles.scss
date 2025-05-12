@@ -52,7 +52,20 @@
   display: none;
 }
 
+.nav_contact {
+  background-color: var(--complementary-color-1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+}
+
 @media screen and (max-width: 1024px) {
+  .nav_contact {
+    padding: 0;
+  }
+
   .nav_list_div {
     transition: 0.4s;
     transition-timing-function: ease-in-out;

@@ -1,53 +1,46 @@
 import { NavBarTypes } from "@/components/Header/models";
 
 export const NavBarLinks: NavBarTypes[] = [
-
     {
         id: 0,
-        href: '#About',
-        item: 'Sobre',
+        href: "#About",
+        item: "Sobre",
     },
     {
         id: 1,
-        href: '',
-        item: '/'
+        href: "",
+        item: "/",
     },
     {
         id: 2,
-        href: '#Projects',
-        item: 'Projetos'
+        href: "#Projects",
+        item: "Projetos",
     },
     {
         id: 3,
-        href: '',
-        item: '/'
+        href: "",
+        item: "/",
     },
     {
         id: 4,
-        href: 'https://github.com/marciogabrielsf',
-        item: 'GitHub'
+        href: "https://github.com/marciogabrielsf",
+        item: "GitHub",
     },
     {
         id: 5,
-        href: '',
-        item: '/'
+        href: "",
+        item: "/",
     },
     {
         id: 6,
-        href: 'https://www.linkedin.com/in/marciogabrielsf/',
-        item: 'LinkedIn'
+        href: "https://www.linkedin.com/in/marciogabrielsf/",
+        item: "LinkedIn",
     },
     {
         id: 7,
-        href: '',
-        item: '/'
+        href: "",
+        item: "/",
     },
-    {
-        id: 8,
-        href: '#Contact',
-        item: 'Contato'
-    }
-    
-]
+];
 
-export const ActualEmail = "marciogdsf@gmail.com"
+export const ActualEmail = "marciogdsf@gmail.com";

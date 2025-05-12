@@ -8,18 +8,18 @@ import Contact from "./sections/Contact";
 import Experiences from "./sections/Experience";
 
 function App() {
-	return (
-		<div className="app">
-			<Header />
+    return (
+        <div className="app">
+            <Header />
 
-			<main className="main">
-				<Home />
-				<About />
-				<Experiences />
-				<Projects />
-				<Contact />
-			</main>
-		</div>
-	);
+            <main className="main">
+                <Home />
+                <About />
+                <Experiences />
+                <Projects />
+                <Contact />
+            </main>
+        </div>
+    );
 }
 export default App;
